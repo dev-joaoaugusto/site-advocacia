@@ -339,3 +339,115 @@ button:hover {
     color: #202633;
     text-decoration: underline;
 }
+
+@media (max-width: 1024px) {
+    .retangulo-dividido {
+        width: 95%; 
+        height: auto;
+        padding: 40px 0;
+        flex-direction: column; 
+        gap: 40px;
+    }
+
+    .item-retangulo {
+        width: 100%;
+        padding: 0 50px;
+    }
+
+    .areas-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column-reverse; 
+        text-align: center;
+        margin-top: 50px;
+        padding-bottom: 150px;
+    }
+
+    .texto {
+        align-items: center; 
+    }
+
+    .texto h1 {
+        font-size: 40px; 
+    }
+
+    .foto img {
+        max-width: 300px; 
+    }
+
+    .sobre {
+        flex-direction: column;
+        padding: 40px 5%;
+        gap: 40px;
+    }
+
+    .fotosobre img {
+        box-shadow: 10px 10px 0px rgba(185, 157, 124, 0.6); 
+    }
+
+    .areas-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .areas h1 {
+        font-size: 32px;
+    }
+
+    .contato-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .informacao {
+        text-align: center; 
+    }
+
+    .informacao button {
+        width: 100%; 
+    }
+
+    .mapa {
+        width: 100%;
+    }
+
+    .retangulo-dividido {
+        background: #171B24; 
+    }
+
+    .item-retangulo p {
+        padding-left: 0;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .cabecalho-item {
+        justify-content: center; 
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .texto h1 {
+        font-size: 32px;
+    }
+
+    .spanhome {
+        font-size: 24px;
+    }
+}
